@@ -1,0 +1,77 @@
+.promo {
+    min-height: 650px;
+    padding: 22px 0 93px 0;
+    background: url(../img/first/bg1.png) center (center/cover) no-repeat;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+    &__header{
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: right;
+        text-transform: uppercase;
+        // Text style for "П, одбор п"
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal; 
+    }
+    &__subheader{
+        margin-top: 17px;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: right;
+        text-transform: uppercase;
+        // Text style for "с учётом В"
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+    &__icons{
+        display: flex;
+        width: 425px;
+        justify-content: space-between;
+        margin-top: 65px;
+        .promo__icon{
+            width: 106px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: center;
+            // Text style for "Время подб"
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            img{
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        } 
+    }
+    &__link{
+        margin-top: 20px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        
+        a{
+            color: #ffffff;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+}

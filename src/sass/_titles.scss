@@ -1,0 +1,17 @@
+.title{
+    padding-top: 70px;
+    color: #0d0d0d;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    // Text style for "Н, АШИ ПРЕ"
+    text-transform: uppercase;
+    &_left{
+        color: #ffffff;
+        font-size: 36px;
+        text-align: left;
+    }
+}

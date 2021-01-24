@@ -1,0 +1,18 @@
+.consultation{
+    min-height: 680px;
+    padding: 100x 0 92px;
+    background: url(../img/second/bg2.png) center (center/cover) no-repeat;
+    &__descr{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        // Text style for "Просто зап"
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+} 
