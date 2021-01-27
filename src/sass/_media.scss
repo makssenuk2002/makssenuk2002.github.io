@@ -1,5 +1,233 @@
-@media (max-width: 500px) {
+@media (max-width: 776px){
+    .container{
+        width: 770px;
+    }
     .promo{
-        height: 1111px;
+        .header{
+            margin-right: 20px;
+        }
+        &__wrapper{
+            margin-right: 20px;
+        }
+    }
+    .adventages{
+        .title{
+            margin-right: 20px;
+        }
+        &__wrapper{
+            margin-right: 20px;
+        }
+    }
+    .catalog{
+        .conteiner{
+            width: 770px;
+        }
+        .title{
+            // width: 740px;
+        }
+    }
+    .consultation{
+        .title{
+            margin-left: 20px;
+        }
+        &__descr{
+            margin-left: 20px;
+        }
+        .feed-form{
+            margin-left: 20px;
+        }
+    }
+}
+@media (max-width: 575px){
+    .container{
+        width: 550px;
+    }
+    .promo{
+        .header{
+            &__logo{
+                img{
+                    width: 80%;
+                }
+            }
+            &__official{
+                font-size: 11px;
+                span{
+                font-size: 11px;
+
+                }
+            }
+            &__contacts{
+                margin-left: 20px;
+                button{
+                    width: 200px;
+                }
+            }
+            &__phone{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+        
+        &__header{
+            font-size: 30px;
+        }
+        &__subheader{
+            font-size: 19px;
+        }
+        button{
+            width: 250px;
+        }
+        
+    }
+    .adventages{
+        .adventages__subheader{
+            font-size: 12px;
+        }
+    }
+    .consultation{
+        .title{
+            font-size: 30px;
+        }
+        &__descr{
+            font-size: 17px;
+        }
+    }
+    .carousel{
+        img{
+            width: 67%;
+        }
+    }
+    .catalog{
+        title{
+            width: 520px;
+        }
+        &__tab{
+            font-size: 14px;
+
+        }
+        &__tabs{
+            width: 80%;
+            margin: 20px auto;
+        }
+        .catalog-item{
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    }
+    .footer{
+        .footer__info{
+            width: 280px;
+            height: 200px;
+        }
+        .footer__addr{
+            font-size: 14px;
+        }
+        .footer__phone{
+            font-size: 14px;
+        }
+        .footer__social{
+            margin-top: 25px;
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
+@media (max-width: 420px){
+    .container{
+        width: 420px;
+    }
+    .promo{
+        .header{
+            &__logo{
+                img{
+                    width: 80%;
+                }
+            }
+            &__official{
+                font-size: 11px;
+                span{
+                font-size: 11px;
+
+                }
+            }
+            &__contacts{
+                margin-left: 20px;
+                button{
+                    width: 150px;
+                }
+            }
+            &__phone{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+        
+        &__header{
+            font-size: 25px;
+        }
+        &__subheader{
+            font-size: 13px;
+        }
+        .promo__icon{
+            font-size: 12px;
+        }
+        .promo__icons{
+            width: 370px;
+        }
+        &__link{
+            font-size: 14px;
+        }
+        button{
+            width: 230px;
+        }
+    }
+    .consultation{
+        .title{
+            font-size: 25px;
+        }
+        &__descr{
+            font-size: 13px;
+        }
+    }
+    .carousel{
+        img{
+            width: 55%;
+        }
+    }
+    .feed{
+        img{
+            height: 130px;
+            margin-left: 20px;
+        }
+        .feed__subtitle{
+            font-size: 15px;
+        }
+        .feed__descr{
+            width: 200px;
+            font-size: 12px;
+        }
+    }
+    .footer{
+        .footer__info{
+            width: 180px;
+            height: 100px;
+        }
+        .footer__addr{
+            margin-top: 10px;
+            font-size: 10px;
+        }
+        .footer__phone{
+            font-size: 10px;
+            margin-top: 10px;
+        }
+        .footer__social{
+            width: 155px;
+            margin-top: 20px;
+            margin-left: 20px;
+            img{
+                width: 50%;
+            }
+        }
     }
 }
