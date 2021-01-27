@@ -5,16 +5,19 @@
 }
 @import 'variables';
 
-.conteiner {
+.container {
     position: relative;
     width: 950px;
     margin: 0 auto;
 }
 @import 'promo';
 @import 'header';
-@import 'buttons';
+@import 'button';
 @import 'advantages';
 @import 'titles';
 @import 'consultation';
 @import 'forms';
 @import 'carousel';
+@import 'catalog';
+@import 'media';
+@import 'reviews';
