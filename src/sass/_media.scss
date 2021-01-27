@@ -192,7 +192,10 @@
     }
     .carousel{
         img{
-            width: 55%;
+            width: 100%;
+        }
+        &__inner{
+            width: 400px;
         }
     }
     .feed{
@@ -204,8 +207,11 @@
             font-size: 15px;
         }
         .feed__descr{
-            width: 200px;
+            width: 190px;
             font-size: 12px;
+        }
+        .feed__text{
+            padding-right: 10px;
         }
     }
     .footer{
