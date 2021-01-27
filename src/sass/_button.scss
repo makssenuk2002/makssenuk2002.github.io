@@ -1,4 +1,4 @@
- .button{
+.button{
     width: 150px;
     height: 30px;
     border-radius: 5px;
@@ -17,6 +17,11 @@
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
+    transition: 0.5s all;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
     &_main{
         margin-top: 67px;
         width: 300px;
