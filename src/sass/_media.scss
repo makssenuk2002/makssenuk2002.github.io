@@ -135,7 +135,7 @@
 }
 @media (max-width: 420px){
     .container{
-        width: 420px;
+        width: 380px;
     }
     .promo{
         .header{
@@ -145,40 +145,44 @@
                 }
             }
             &__official{
-                font-size: 11px;
-                span{
-                font-size: 11px;
-
-                }
+                display: none;
             }
             &__contacts{
-                margin-left: 20px;
+                margin-left: 10px;
+                margin-right: 20px;
                 button{
-                    width: 150px;
+                    width: 130px;
+                    margin-right: -5px;
                 }
             }
             &__phone{
-                font-size: 16px;
+                font-size: 12px;
                 margin-bottom: 10px;
             }
         }
         
         &__header{
             font-size: 25px;
+            margin-right: 20px;
+
         }
         &__subheader{
             font-size: 13px;
+            margin-right: 20px;
         }
         .promo__icon{
             font-size: 12px;
         }
         .promo__icons{
-            width: 370px;
+            width: 320px;
+            margin-right: 10px;
         }
         &__link{
+            margin-right: 20px;
             font-size: 14px;
         }
         button{
+            margin-right: 20px;
             width: 230px;
         }
     }
@@ -191,17 +195,61 @@
         }
     }
     .carousel{
+        padding-bottom: 0;
         img{
             width: 100%;
         }
         &__inner{
-            width: 400px;
+            width: 380px;
+        }
+        .slick-dots{
+            display: flex;
+            font-size: 6px;
+            line-height: 20px;
+            // position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            content: '•'; /* <-- Вот этот символ */
+            text-align: center;
+            opacity: .25;
+            color: black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin: 20px  0  0 120px ;
+        }
+    }
+    .adventages{
+        height: 1000px;
+        .title{
+            margin-right: 5px;
+        }
+        &__wrapper{
+            display: block;
+        }
+        &__item{
+            margin: 20px auto;
+        }
+        .adventages__subheader{
+            font-size: 15px;
+        }
+
+    }
+    .catalog{
+        &__tabs{
+            width: 90%;
+        }
+        &__tab{
+            font-size: 11px;
+            height: 40px;
+            line-height: 40px;
         }
     }
     .feed{
         img{
             height: 130px;
-            margin-left: 20px;
+            margin-left: 30px;
         }
         .feed__subtitle{
             font-size: 15px;
@@ -212,6 +260,7 @@
         }
         .feed__text{
             padding-right: 10px;
+            margin-left:15px ;
         }
     }
     .footer{

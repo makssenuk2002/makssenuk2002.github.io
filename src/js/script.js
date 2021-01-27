@@ -10,7 +10,7 @@ $(document).ready(function(){
                 settings: {
                     dots: true,
                     arrows: false,
-                    dots: false
+                    // dots: falses
                 }
             }
         ]
