@@ -1,59 +1,40 @@
-
-.adventages{
-    height: 470px;
+.advantages {
+    padding: 70px 0 80px 0;
     background-color: #f6f6f6;
-    
-    &__wrapper{
+    &__wrapper {
         margin-top: 65px;
         display: flex;
         justify-content: space-between;
     }
-    &__item{
-        display: block;
-        width: 240px;
-        img{
-            display: block;
-            margin: 0 auto;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 238px;
+    }
+    &__subtitle {
+        margin-top: 38px;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__descr {
+        margin-top: 26px;
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        a {
+            color: #ff0000;
+            text-decoration: underline;
         }
-        .adventages__header-item{
-            margin-top: 38px;
-            color: #0d0d0d;
-            font-size: 18px;
-            font-weight: 700;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-            text-align: center;
-            // Text style for "Делимся оп"
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-        }
-        .adventages__subheader{
-            margin-top: 20px;
-            color: #0d0d0d;
-            font-size: 14px;
-            font-weight: 300;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-            text-align: center;
-            // Text style for "Н, аши сот"
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-            span{
-                color: #ff0000;
-                font-style: normal;
-                letter-spacing: normal;
-                line-height: normal;
-                text-decoration: underline;
-                a{
-                    color: #ff0000;
-                }
+    }
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
             }
         }
-    
     }
-    
 }

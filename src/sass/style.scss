@@ -9,7 +9,7 @@
     position: relative;
     width: 950px;
     margin: 0 auto;
-}
+}@import 'animation';
 @import 'promo';
 @import 'header';
 @import 'button';
@@ -20,6 +20,7 @@
 @import 'carousel';
 @import 'catalog';
 @import 'media';
-@import 'reviews';
+@import 'feed';
 @import 'footer';
-@import 'modal'
+@import 'modal';
+@import 'pageup'
