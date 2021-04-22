@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            font-size: 30px;
+            /* color: aqua; */
+            margin-left: 20px;
+        }
+
+        input {
+            width: 300px;
+            height: 50px;
+            font-size: 30px;
+            background-color: gold;
+            border-radius: 50px;
+            box-shadow: 0 0 100px rgba(77, 47, 14, 0.5);
+
+        }
+
+        body {
+            background: url(https://content.fortune.com/wp-content/uploads/2021/02/Elon-Musk-with-Bitcoin_web.jpg) no-repeat;
+            -moz-background-size: 100%;
+            /* Firefox 3.6+ */
+            -webkit-background-size: 100%;
+            /* Safari 3.1+ и Chrome 4.0+ */
+            -o-background-size: 100%;
+            /* Opera 9.6+ */
+            background-size: 100%;
+            /* Современные браузеры */
+        }
+
+        .wrapper {
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <label for="usdForBtc">USD</label>
+        <input id="usdForBtc" type="text" text =" " >
+        <input id="btcFromUsd" type="text" placeholder=" BTC">
+
+        <label for="btcForUsd">BTC</label>
+        <input id="btcForUsd" type="text">
+        <input id="usdFromBtc" type="text" placeholder=" ой дохуя стоє">
+        
+        <label for="usdForRub">DOGECOIN</label>
+        <input id="dogeForUsd" type="text">
+        <input id="usdFromDoge" type="text" placeholder=" На хайпі">
+    </div>
+
+    
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
