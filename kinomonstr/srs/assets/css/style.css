@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+INPUT{
+  background-color: rgb(3, 3, 24);
+  color:white;
+ }
+h1,h2{
+  font: normal 180% 'centry gothic'arial;
+   margin: 0 0 15px 0;
+   padding: 15px 0 5px 0;
+   color: white;
+   
+}
+h2{
+  font-size: 140%;
+}
+a, a:hover{
+  color: yellowgreen;
+  outline: none;
+  text-decoration: underline;
+  
+}
+p{
+  color: white;
+}
+ul{
+  margin: 2px 0 22px 17px;
+}
+ul li{
+  margin: 0 0 6px 0;
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;
+}
+
+.header{
+    background-color: #111111;
+    height: 220px;
+    width: 100%;
+    font-size:1.3em;
+    margin-left:0px ;
+    margin-right:0px ;
+    margin-top: 0px;
+    min-width: 900px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.main{
+  background: black url(https://images.wallpapersden.com/image/download/wolverine_a2trZ2qUmZqaraWkpJRmbmdlrWZlbWU.jpg) no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%; /* Современные браузеры */
+ 
+}
+.box{
+  margin: 0;
+  height: 100%
+  width: 1000px;
+} 
+.box , .logo , .menubar , .site_content , .footer{
+margin-left: auto;
+margin-right: auto;
+margin-top: -20px;
+
+}
+.logo{
+    width: 880px;
+    padding-bottom:40px ;
+}
+.logo h1 , .logo  h2 ;{
+    font: normal 200% 'century gothic' , arial, sans-serif;
+    margin:0 0 0 9px;
+}
+.logo_text h1,.logo_text h1 a, .logo_text h1 a :hover{
+    padding:22px 0 0 0;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.logo_text h2{
+    font-size: 1em;
+    padding:4px 0 0 0 ;
+    color: #999;
+}
+.menubar {
+    width: 900px;
+    height: 46px;
+  }
+  
+ul.menu {
+    float: right;
+  }
+  
+ul.menu li {
+    float: left;
+    padding: 0 0 0 9px;
+    list-style: none;
+    margin: 1px 2px 0 0;
+  }
+  
+ul.menu li a {
+    font: normal 100% 'trebuchet ms', sans-serif;
+    display: block;
+    height: 20px;
+    padding: 6px 35px 5px 28px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+ul.menu li.selected a {
+    color: rgb(255, 255, 255);
+  }
+  
+ul.menu li a:hover {
+    color:yellowgreen;
+  }
+  .site_content {
+    width: 880px;
+    overflow:hidden;
+    margin: 10px auto 0 auto;
+    background-color:black;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .sidebar_container {
+    float: right;;
+    width: 222px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar {
+    float: right;
+    width: 200px;
+    padding: 5%;
+    margin: 0 0 16px 0;
+    border: solid 1px #f2f2f2;
+    border-radius: 5px;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.3);
+  }
+.btn{
+      padding: 2px;
+      color:white;
+      cursor: pointer ;
+      margin-top: 5px;
+    }
+.lables_passreg_text{
+      font-size: 0.7em;
+      margin-left: 3%;
+      margin-left: 2%;
+    }
+.reyt{
+  text-decoration: none;
+  block:none;
+}
+.sidebar ul{
+  margin: 0;
+}
+.sidebar .rating_sidebar{
+  color: aqua;
+  float: right;
+  font-size: 1.2em;
+  width: 60px;
+}
+.sidebar ul{
+  margin: 0 0 0 0;
+  list-style-type: none;
+}
+.content{
+  text-align: left;
+  width: 620px;
+  float: left;
+  padding: 0 0 0 5px;
+  height: 100%;
+}
+.content a{
+  text-decoration:none ;
+}
+.new_films{
+  color:white;
+}
+.about{
+  color:white;
+  font-size: 1.1em;
+
+}
+.films_block{
+padding-top: 10px;
+}
+.footer{
+  width: 100%;
+  height: 100px;
+  padding: 28px 0 5px 0;
+  text-align: center;
+  color: aqua;
+  min-width: 900px;
+  margin-left: 0;
+  margin-right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.footer a{
+  color: aqua;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: white;
+  text-decoration: none;
+}
+.footer p{
+  padding: 0 0 10px 0;
+}
+.info_film_page{
+  color: #f2f2f2;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+.info_film_page .lable{
+  font-size: 1.2em;
+}
+.info_film_page .value{
+  font-size: 1em;
+  color: aqua;
+  margin-right: 3%;
+}
+.deckription_film{
+  margin-bottom: 15%;
+  height: 140px;
+}
+.deckription_film img{
+  float: left;
+  margin-right: 5%;
+  border-radius: 5px;
+  border: solid 5px black;
+}
+.reviev{
+  margin-bottom: 4%;
+  color: #fff;}
+
+.reviev .reviev_name{
+    background-color: aqua;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+    padding: 1%;
+    color: black;
+  }
+.reviev .reviev_text{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
+.send{
+  margin-bottom: 4%;
+}
+.send input[type="text"] , textarea{
+  border: solid 1px ;
+  margin-bottom: 2%;
+}
+.send input[type="text"] {
+  width: 98%;
+  padding: 1%;
+  background-color: rgb(6, 46, 46);
+  
+  
+}
+.send textarea{
+  width: 620px;
+  height: 200px;
+  background-color: rgb(6, 19, 19);
+  border-radius: 5px;
+}
+.send input[type="submit"] {
+  padding: 2%;
+  border-radius: 5px;
+  background-color: rgb(135, 135, 226);
+  color: black;
+}
+.cont{
+margin-bottom: 4%;
+height: 300px;
+}
+.cont input[type="text"]{
+  width: 98%;
+  padding: 1%;
+  border-top-left-radius:5px ;
+  border-top-right-radius:5px ;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color:rgb(0, 0, 0,0.1);
+  border-color: silver;
+}
+
+
+.cont textarea{
+  width: 620px;
+  height: 200px;
+  background-color:rgb(0, 0, 0,0.1);
+  border-radius: 5px;
+  border-top-left-radius:5px ;
+  border-top-right-radius:5px ;
+  border-color: silver;
+}
+.cont input[type="submit"] {
+  padding: 2%;
+  border-radius: 5px;
+  background-color: rgb(135, 135, 226);
+  color: black;
+}
+.info_film{
+  margin-bottom: 5%;
+  background-color: rgb(10, 165, 165,0.5  );
+  padding: 5%;
+  height: 270px;
+  border-radius: 5px;
+
+}
+.info_film img{ 
+  float: left;
+  margin-right: 10px  ;
+  border-radius: 5px;
+  border: solid 1%; 
+}
+.button{
+  background-color: blue;
+  padding: 2%;
+  width: 70px;
+  float: right;
+  border-radius: 5px;
+  margin-top: 5%;
+  clear: both;
+}
+.rating{
+  width:100%;
+  border: solid 1px white;
+  color: #f2f2f2;
+  padding: 1%;
+}
+.td{
+  padding: 2%;
+  border: solid 1px white;
+}
+.td img{
+  width: 60px;
+  vertical-align: middle;
+}
+.center{
+  text-align: center;
+}
+.bold{
+  font-weight: bold;
+}
+
+/* css mobile */
+@media only screen
+and (max-width: 320px)
+and (min-width: 500px) {
+
+.header{
+  height: 500px;
+}
+
+
+ }

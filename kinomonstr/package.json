@@ -1,0 +1,22 @@
+{
+  "name": "kinomonstr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makssenuk2002/kinomonstr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makssenuk2002/kinomonstr/issues"
+  },
+  "homepage": "https://github.com/makssenuk2002/kinomonstr#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
