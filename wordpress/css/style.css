@@ -1,0 +1,475 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.conteiner{
+    position: relative;
+    width: 1140px;
+    position: relative;
+    margin: 0 auto;
+}
+.promo{
+    height: 900px;
+    background: url(/img/firstScreen/first_bg.png) center center /cover no-repeat;
+    padding: 39px 0 62px 0;
+}
+.logo .logo_img{
+    display: block;
+    margin: 0 auto;
+    width: 83px;
+    height: 71px;
+    
+}
+.logo .logo_text{
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "WordPress" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-top: 14px;
+}
+h1{
+    margin-top: 53px;
+}
+h2.title{
+    margin-top: 10px;
+}
+.title{
+    color: #f9bf3b;
+    font-size: 41px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "С, оздать" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+ 
+}
+.simple .title_big{
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "это просто" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-top: 21px;
+    
+}
+.promo .promo_text{
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    padding: 0 13px 0 13px;
+    margin-top: 23px;
+}
+.promo .promo_text span{
+    color: #f9bf3b;
+    font-family: "Roboto - Bold";
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.promo .promo_btn{
+    display: block;
+    margin: 73px auto;
+    width: 350px;
+    height: 72px;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 21px;
+    font-weight: 350;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "З, аписать" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    cursor: pointer;
+    outline: none;
+    
+}
+.more{
+    margin-top: 72px;
+}
+.more .more_text{
+    color: #ffffff;
+    font-family: "Roboto - Thin";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "узнать бол" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.more .more_img{
+    display: block;
+    margin: 13px auto;
+    width: 30px;
+    height: 19px; 
+}
+.waiting {
+    min-height: 604px;
+    background-color: #efefef;
+    padding:85px 0 75px 0 ;
+}
+.waiting .waiting_header, .finish .finish_header{
+    color: #252525;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "Ч, то вас" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.finish .finish_header{
+    color: white;
+}
+.waiting .waiting_devider, .finish  .finish_devider{
+    width: 217px;
+    height: 4px;
+    background-color: #f9bf3b;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+.waiting .waiting_subheader{
+    margin-top: 17px;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    /* Text style for "2 бесплатн" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.waiting .waiting_wraper{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.waiting .waiting_wraper .waiting_item{
+    width: 339px;
+    text-align: center;
+    
+
+}
+.waiting .waiting_wraper .waiting_item  .waiting_img{
+    widows: 100px;
+}
+.waiting .waiting_wraper .waiting_item  .waiting_descd{
+    margin-top: 30px;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 21px;
+    text-align: center;
+    /* Text style for "Покажем, к" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.optimization{
+    height: 550px;
+}
+.optimization .optimization_header{
+    color: #299cbd;
+    font-family: "Roboto - Black";
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    /* Text style for "Ч, то тако" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-left: 361px; 
+    margin-top: 100px;
+}
+.optimization .optimization_text{
+    width: 750px;
+    height: 289px;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 27px;
+    text-align: justifyLeft;
+    /* Text style for "На простор" */
+    font-family: "Roboto Light";
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-left: 361px;
+    margin-top: 25px;
+}
+.optimization .optimization_text span{
+    font-family: "Roboto - Bold";
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.optimization .optimization_img{
+    position: absolute;
+    top: -50px;
+    width: 868px;
+    height: 502px;
+    left: -240px;
+    z-index: -1;
+    margin-bottom: -20px;
+}
+.finish{
+   
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background:url(/img/fourthSc/bg.png) center center/cover no-repeat;
+}
+.finish .finish_wraper{
+    
+    margin-top: 41px;
+    display: flex;
+    justify-content:space-between;
+}
+.finish .finish_wraper .finish_item{
+    width: 204px;
+}
+.finish .finish_wraper .finish_item .finih_round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+.finish .finish_wraper .finish_item .finish_descr{
+    margin-top: 25px;
+    text-align: center;
+    color: #efefef;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    /* Text style for "Обеспечить" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.gift{
+    min-height: 604px;
+    padding:86px 0 75px 0 ;
+    background:url(/img/finalSc/bg.png) center center/cover no-repeat;
+}
+ .gift .gift_img{
+    display: block;
+    margin: 0 auto;
+    margin-top: -26px;
+}
+.gift .gift_text{
+    margin-top: 42px;
+    color: #252525;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 43px;
+    text-align: center;
+    /* Text style for "Д, ля всех" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.gift .btn{
+    display: block;
+    margin: 73px auto;
+    margin-top: 52px;
+    width: 350px;
+    height: 72px;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 21px;
+    font-weight: 350;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "З, аписать" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    cursor: pointer;
+    outline: none;
+}
+.final_screen{
+    min-height: 510px;
+    padding:86px 0 75px 0 ;
+}
+.final_screen .final_img{
+    display: block;
+    margin: 0 auto;
+    margin-top: -26px;
+}
+ h2 .first{
+    color: #252525;
+font-family: Roboto;
+font-size: 30px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: 12px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "П, ервый в" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+
+.final_text .first_text{
+    color: #252525;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "П, ервый в" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-top: 30px;
+}
+.final_text .second_text{
+    color: #299cbd;
+    font-family: "Roboto - Black";
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "1, 0 сентя" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-top: 15px;
+}
+.final_text .third_text{
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    /* Text style for "Успейте за" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-top: 15px;
+}
+.footer{
+    min-height: 140px;
+    background-color: #1a1a1a;
+}
+.footer .contacts{
+    color: #888888;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: underline;
+    /* Text style for "Служба под" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    /* Text style for "|  , Позво" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    padding: 61px;
+}
+.footer a{
+    color:#888888;
+}
