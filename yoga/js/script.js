@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function () {
 
     'use strict';
     let tab = document.querySelectorAll('.info-header-tab'),
@@ -21,10 +21,10 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    info.addEventListener('click', function(event) {
+    info.addEventListener('click', function (event) {
         let target = event.target;
         if (target && target.classList.contains('info-header-tab')) {
-            for(let i = 0; i < tab.length; i++) {
+            for (let i = 0; i < tab.length; i++) {
                 if (target == tab[i]) {
                     hideTabContent(0);
                     showTabContent(i);
@@ -41,15 +41,15 @@ window.addEventListener('DOMContentLoaded', function() {
 
     function getTimeRemaining(endtime) {
         let t = Date.parse(endtime) - Date.parse(new Date()),
-        seconds = Math.floor((t/1000) % 60),
-        minutes = Math.floor((t/1000/60) % 60),
-        hours = Math.floor((t/(1000*60*60)));
+            seconds = Math.floor((t / 1000) % 60),
+            minutes = Math.floor((t / 1000 / 60) % 60),
+            hours = Math.floor((t / (1000 * 60 * 60)));
 
         return {
-            'total' : t,
-            'hours' : hours,
-            'minutes' : minutes,
-            'seconds' : seconds
+            'total': t,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
         };
     }
 
@@ -59,15 +59,15 @@ window.addEventListener('DOMContentLoaded', function() {
             minutes = timer.querySelector('.minutes'),
             seconds = timer.querySelector('.seconds'),
             timeInterval = setInterval(updateClock, 1000);
-            
+
         function updateClock() {
             let t = getTimeRemaining(endtime);
 
-            function addZero(num){
-                        if(num <= 9) {
-                            return '0' + num;
-                        } else return num;
-                    };
+            function addZero(num) {
+                if (num <= 9) {
+                    return '0' + num;
+                } else return num;
+            };
 
             hours.textContent = addZero(t.hours);
             minutes.textContent = addZero(t.minutes);
@@ -91,19 +91,19 @@ window.addEventListener('DOMContentLoaded', function() {
         overlay = document.querySelector('.overlay'),
         close = document.querySelector('.popup-close');
 
-    more.addEventListener('click', function() {
+    more.addEventListener('click', function () {
         overlay.style.display = 'block';
         this.classList.add('more-splash');
         document.body.style.overflow = 'hidden';
     });
 
-    close.addEventListener('click', function() {
+    close.addEventListener('click', function () {
         overlay.style.display = 'none';
         more.classList.remove('more-splash');
         document.body.style.overflow = '';
     });
 
-     // Form
+    // Form
 
     let message = {
         loading: 'Загрузка...',
@@ -115,9 +115,9 @@ window.addEventListener('DOMContentLoaded', function() {
         input = form.getElementsByTagName('input'),
         statusMessage = document.createElement('div');
 
-        statusMessage.classList.add('status');
+    statusMessage.classList.add('status');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function (event) {
         event.preventDefault();
         form.appendChild(statusMessage);
 
@@ -128,17 +128,17 @@ window.addEventListener('DOMContentLoaded', function() {
         let formData = new FormData(form);
 
         let obj = {};
-        formData.forEach(function(value, key) {
+        formData.forEach(function (value, key) {
             obj[key] = value;
         });
         let json = JSON.stringify(obj);
 
         request.send(json);
 
-        request.addEventListener('readystatechange', function() {
+        request.addEventListener('readystatechange', function () {
             if (request.readyState < 4) {
                 statusMessage.innerHTML = message.loading;
-            } else if(request.readyState === 4 && request.status == 200) {
+            } else if (request.readyState === 4 && request.status == 200) {
                 statusMessage.innerHTML = message.success;
             } else {
                 statusMessage.innerHTML = message.failure;
@@ -153,7 +153,7 @@ window.addEventListener('DOMContentLoaded', function() {
     // Slider
 
 
-    let slideIndex = 1,
+    let slideIndex = 0,
         slides = document.querySelectorAll('.slider-item'),
         prev = document.querySelector('.prev'),
         next = document.querySelector('.next'),
@@ -162,12 +162,12 @@ window.addEventListener('DOMContentLoaded', function() {
 
     showSlides(slideIndex)
 
-    function showSlides(n){
+    function showSlides(n) {
 
-        if(n > slides.length){
+        if (n > slides.length) {
             slideIndex = 1;
         }
-        if(n < 1 ){
+        if (n < 1) {
             slideIndex = slides.length;
         }
 
@@ -181,25 +181,70 @@ window.addEventListener('DOMContentLoaded', function() {
         dots[slideIndex - 1].classList.add('dot-active')
     }
 
-    function plusSlides(n){
+    function plusSlides(n) {
         showSlides(slideIndex += n)
     }
-    function currentSlide(n){
+
+    function currentSlide(n) {
         showSlides(slideIndex = n)
     }
-    
-    prev.addEventListener('click' , function(){
+
+    prev.addEventListener('click', function () {
         plusSlides(-1)
     })
-    next.addEventListener('click' , function(){
+    next.addEventListener('click', function () {
         plusSlides(1)
     })
 
-    dotsWrap.addEventListener('click', function(event){
-        for(let i = 0; i< dots.length + 1 ; i++){
-            if(event.target.classList.contains('dot') && event.target == dots[i-1]){
+    dotsWrap.addEventListener('click', function (event) {
+        for (let i = 0; i < dots.length + 1; i++) {
+            if (event.target.classList.contains('dot') && event.target == dots[i - 1]) {
                 currentSlide(i)
             }
         }
     })
+
+    // calc 
+
+    let persons = document.querySelectorAll('.counter-block-input')[0],
+        restDays = document.querySelectorAll('.counter-block-input')[1],
+        place = document.getElementById('select'),
+        totalValue = document.getElementById('total'),
+        personsSum = 0,
+        daysSum = 0,
+        total = 0;
+
+    totalValue.innerHTML = 0;
+
+    persons.addEventListener('change', function () {
+        personsSum = +this.value;
+        total = (daysSum + personsSum) * 4000;
+
+        if (restDays.value == '') {
+            totalValue.innerHTML = 0;
+        } else {
+            totalValue.innerHTML = total;
+        }
+    });
+
+    restDays.addEventListener('change', function () {
+        daysSum = +this.value;
+        total = (daysSum + personsSum) * 4000;
+
+        if (persons.value == '') {
+            totalValue.innerHTML = 0;
+        } else {
+            totalValue.innerHTML = total;
+        }
+    });
+
+    place.addEventListener('change', function () {
+        if (restDays.value == '' || persons.value == '') {
+            totalValue.innerHTML = 0;
+        } else {
+            let a = total;
+            totalValue.innerHTML = a * this.options[this.selectedIndex].value;
+        }
+    });
+
 });
